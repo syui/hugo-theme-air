@@ -55,7 +55,7 @@ $ curl 127.0.0.1:1313/hugo-theme-air
 
 **config.toml**
 
-``` toml
+``` bash
 $ cat config.toml.backup
 
 $ cp config.toml.backup config.toml
@@ -72,7 +72,7 @@ per page can be done by a simple author = other_author_key entry in the front ma
 pages where you want to omit the author block completely, a .Params.noauthor entry is also
 available.
 
-```bash
+``` bash
 $ hugo new post/foo.md
 
 $ cat content/post/foo.md
