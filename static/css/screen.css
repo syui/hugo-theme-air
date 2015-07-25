@@ -1497,6 +1497,21 @@ body:not(.post-template) .post-title {
 
 @media only screen and (max-width: 900px) {
 
+    /*section.post-excerpt {
+        padding: 20px;
+    }*/
+
+    header.post-header {
+        padding: 20px 20px 0 20px;
+    }
+    section.post-content {
+        padding: 20px;
+    }
+
+    footer.post-meta {
+        padding: 20px;
+    }
+
     blockquote {
         margin-left: 0;
     }
@@ -1519,6 +1534,10 @@ body:not(.post-template) .post-title {
         padding: 10% 0;
     }
 
+    h2.post-title {
+        padding:20px 20px 0px 20px;
+    }
+
     .blog-logo img {
         padding: 4px 0;
         height: 70px;
@@ -1536,9 +1555,9 @@ body:not(.post-template) .post-title {
     }
 
     .post {
-        width: 100%;
-        max-width: 100%;
-        font-size: 0.95em
+        width:100%;
+        max-width:100%;
+        font-size: 0.95em;
     }
 
     body:not(.post-template) .post-title {
@@ -1614,10 +1633,8 @@ body:not(.post-template) .post-title {
 
     article.post.post {
         background-color: #fff;
-        padding: 20px;
         margin: 0;
     }
-
 
 }
 
