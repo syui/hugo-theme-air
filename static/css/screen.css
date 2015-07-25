@@ -97,8 +97,6 @@ button::-moz-focus-inner,
 input::-moz-focus-inner { border: 0; padding: 0; }
 textarea { overflow: auto; vertical-align: top; }
 table { border-collapse: collapse; border-spacing: 0; }
-
-
 /* ==========================================================================
    1. Icons - Sets up the icon font and respective classes
    ========================================================================== */
@@ -1450,6 +1448,48 @@ body:not(.post-template) .post-title {
     float: left;
 }
 
+.btn-bootstrap-2 {
+    /* display: block; */
+    /* position: absolute; */
+    /* z-index: 100; */
+    /* bottom: 50%; */
+    /* left: 50%; */
+    /* margin-left: -16px; */
+    /* width: 34px; */
+    /* height: 34px; */
+    /* display: table-cell; */
+    /* vertical-align: middle; */
+    /* font-size: 44px; */
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+    /* -webkit-animation: bounce 4s 2s infinite; */
+    /* animation: bounce 4s 2s infinite; */
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-weight: 400;
+    /* height: 38px; */
+    /* padding: 0 15px; */
+    border: #bfc8cd 1px solid;
+    opacity: 1;
+    /* color: #9EABB3; */
+    /* text-align: center; */
+    /* font-size: 12px; */
+    text-transform: uppercase;
+    line-height: 35px;
+    white-space: nowrap;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.39);
+    /* transition: all 0.5s ease; */
+}
+.btn-bootstrap-2:hover {
+    color: #fff;
+    background-color: #000;
+    opacity: 0.7;
+    /* color: rgba(255,255,255,0.7); */
+}
 
 /* ==========================================================================
    10. Media Queries - Smaller than 900px
@@ -1481,6 +1521,8 @@ body:not(.post-template) .post-title {
 
     .blog-logo img {
         padding: 4px 0;
+        height: 70px;
+        width: 70px;
     }
 
     .page-title {
@@ -1494,6 +1536,8 @@ body:not(.post-template) .post-title {
     }
 
     .post {
+        width: 100%;
+        max-width: 100%;
         font-size: 0.95em
     }
 
@@ -1568,6 +1612,13 @@ body:not(.post-template) .post-title {
         padding: 0;
     }
 
+    article.post.post {
+        background-color: #fff;
+        padding: 20px;
+        margin: 0;
+    }
+
+
 }
 
 
@@ -1576,6 +1627,12 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
+
+    article.post.post {
+        background-color: #fff;
+        padding: 20px;
+        margin: 0;
+    }
 
     .main-header {
         margin-bottom: 15px;
@@ -1602,7 +1659,8 @@ body:not(.post-template) .post-title {
     }
 
     .blog-logo img {
-        /*height: 30px;*/
+        height: 70px;
+        width: 70px;
     }
 
     .menu-button {
@@ -1660,8 +1718,10 @@ body:not(.post-template) .post-title {
     }
 
     .post {
+        width: 100%;
+        max-width: 100%;
         width: auto;
-        margin-top: 2rem;
+        margin-top: 8rem;
         margin-bottom: 2rem;
         margin-left: 16px;
         margin-right: 16px;
@@ -1957,45 +2017,4 @@ canvas {
   border-radius: 0 0 3px 3px;
 }
 
-.btn-bootstrap-2 {
-    /* display: block; */
-    /* position: absolute; */
-    /* z-index: 100; */
-    /* bottom: 50%; */
-    /* left: 50%; */
-    /* margin-left: -16px; */
-    /* width: 34px; */
-    /* height: 34px; */
-    /* display: table-cell; */
-    /* vertical-align: middle; */
-    font-size: 44px;
-    text-align: center;
-    text-decoration: none;
-    color: rgba(255,255,255,0.7);
-    /* -webkit-animation: bounce 4s 2s infinite; */
-    /* animation: bounce 4s 2s infinite; */
-    border: 1px solid transparent;
-    border-radius: 4px;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-weight: 400;
-    /* height: 38px; */
-    /* padding: 0 15px; */
-    border: #bfc8cd 1px solid;
-    opacity: 1;
-    /* color: #9EABB3; */
-    /* text-align: center; */
-    /* font-size: 12px; */
-    text-transform: uppercase;
-    line-height: 35px;
-    white-space: nowrap;
-    border-radius: 3px;
-    background: rgba(0, 0, 0, 0.39);
-    /* transition: all 0.5s ease; */
-}
-.btn-bootstrap-2:hover {
-    color: #fff;
-    background-color: #000;
-    opacity: 0.7;
-    /* color: rgba(255,255,255,0.7); */
-}
+
