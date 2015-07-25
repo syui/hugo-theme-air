@@ -6,7 +6,7 @@ draft = false
 image = ""
 menu = ""
 share = false
-slug = "post-title"
+slug = "profile"
 title= "syui"
 +++
 

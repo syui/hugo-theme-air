@@ -208,6 +208,7 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
+
     font-family: "Open Sans", sans-serif;
     text-rendering: geometricPrecision;
 }
@@ -514,7 +515,7 @@ body.nav-opened .site-wrapper {
 .main-nav {
     position: relative;
     padding: 35px 40px;
-    margin: 0 0 30px 0;
+    margin: 0 0 100px 0;
 }
 
 .main-nav a {
@@ -928,7 +929,7 @@ body.nav-opened .menu-button .word {
 }
 
 /* Add a little circle in the middle of the border-bottom on our .post
-   just for the lolz and stylepoints. */
+just for the lolz and stylepoints. */
 .post:after {
     display: block;
     content: "";
@@ -1593,7 +1594,7 @@ body:not(.post-template) .post-title {
 
     .main-nav {
         padding: 5px;
-        margin-bottom: 2rem;
+        margin-bottom: 8em;
     }
 
     .blog-logo {

@@ -2,9 +2,9 @@
 {{ $baseurl := .Site.BaseURL }}
 
 {{if .Params.cover}}
-	<header class="main-header tag-head" style="background-image: url({{ $baseurl }}{{.Params.cover}})">
+	<header class="main-header" style="background-image: url({{ $baseurl }}{{.Params.cover}})">
 {{else if .Site.Params.cover}}
-	<header class="main-header tag-head" style="background-image: url({{ $baseurl }}{{.Site.Params.cover}})">
+	<header class="main-header" style="background-image: url({{ $baseurl }}{{.Site.Params.cover}})">
 {{else}}
 	<header class="main-header tag-head no-cover">
 {{end}}
@@ -23,18 +23,18 @@
       {{end}}
     </nav>
     <div class="vertical">
+
         <div class="main-header-content inner">
-            <h1 class="page-title">{{.Title}}</h1>
-            <h2 class="page-description">
-                {{if .Params.description}}
-                    {{.Params.description}}
-                {{end}}
-            </h2>
+            <h1 class="page-title">
+
+              <a class="btn-bootstrap-2" href="#content">{{ .Site.Title }}</a>
+          </h1>
         </div>
-    </div>
+</div>
+    <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
 </header>
 
-<main class="content" role="main">
+<main id="content" class="content" role="main">
     {{ $paginator := .Paginator }}
 
 	<div class="extra-pagination inner">

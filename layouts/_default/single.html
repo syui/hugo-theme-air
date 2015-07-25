@@ -1,30 +1,36 @@
 {{ partial "header.html" . }}
 {{ $baseurl := .Site.BaseURL }}
 
-{{if .Params.image}}
-<header class="main-header post-head" style="background-image: url({{ $baseurl }}{{.Params.image}})">
-  <nav class="main-nav overlay clearfix">
-{{else}}
-<header class="main-header post-head no-cover">
-  <nav class="main-nav clearfix">
-{{end}}
-
-  {{ if .Site.Params.logo }}
-      <a class="blog-logo" href="{{.Site.BaseURL}}"><img src="{{.Site.BaseURL}}{{ .Site.Params.logo }}" alt="Home" /></a>
-  {{end}}
-  {{ if .Site.Menus.main }}
-      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
-  {{else}}
-      <a class="menu-button icon-feed" href="{{ .Site.BaseURL }}index.xml">&nbsp;&nbsp;Subscribe</a>
-  {{end}}
-  </nav>
+<header class="main-header " style="background-image: url({{.Site.BaseURL}}{{.Site.Params.cover}})">
+    
+    <nav class="main-nav overlay clearfix">
+        {{ if .Site.Params.logo }}
+            <a class="blog-logo" href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}{{.Site.Params.logo}}" alt="Blog Logo" /></a>
+        {{end}}
+        <!--
+        {{ if .Site.Menus.main }}
+            <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+        {{else}}
+            {{ if .Site.Params.RSSLink}}
+              <a class="menu-button icon-feed" href="{{.Site.Params.RSSLink }}">&nbsp;&nbsp;Subscribe</a>
+            {{else}}
+              <a class="menu-button icon-feed" href="{{ .RSSLink }}">&nbsp;&nbsp;Subscribe</a>
+            {{end}}
+        {{end}}
+        -->
+    </nav>
+<div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+              <a class="btn-bootstrap-2" href="#content">{{ .Site.Title }}</a>
+          </h1>
+          <h2 class="page-description">{{ .Site.Params.description }}</h2>
+        </div>
+</div>
+    <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
 </header>
 
-
-
-<main class="content" role="main">
-
-
+  <main id="content" class="content" role="main">
 
 
   <article class="post {{ .Section }}">

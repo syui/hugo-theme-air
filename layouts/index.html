@@ -10,7 +10,7 @@
 
     <nav class="main-nav overlay clearfix">
         {{ if .Site.Params.logo }}
-            <a class="blog-logo" href="{{ .Permalink }}"><img src="https://raw.githubusercontent.com/mba-hack/images/master/phoenix/phoenix_power.png" alt="Blog Logo" /></a>
+            <a class="blog-logo" href="{{ .Permalink }}"><img src="{{ .Site.BaseURL }}{{.Site.Params.logo}}" alt="Blog Logo" /></a>
         {{end}}
         <!--
         {{ if .Site.Menus.main }}
@@ -27,13 +27,13 @@
 <div class="vertical">
         <div class="main-header-content inner">
             <h1 class="page-title">
-              <a class="btn-bootstrap-2" href="#content">ENTRY</a>
+              <a class="btn-bootstrap-2" href="#content">{{ .Site.Title }}</a>
           </h1>
+          <h2 class="page-description">{{ .Site.Params.description }}</h2>
         </div>
 </div>
     <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
 </header>
-
 
 <main id="content" class="content" role="main">
 
