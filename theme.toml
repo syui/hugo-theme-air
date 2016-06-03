@@ -1,0 +1,17 @@
+name = "Air"
+license = "MIT"
+licenselink = "https://github.com/syui/hugo-theme-air/blob/master/LICENSE.md"
+description = "Casper theme from Ghost Foundation, Plus particles.js"
+homepage = "https://syui.github.io/hugo-theme-air"
+tags = ["blog"]
+features = ["disqus", "google analytics","share"]
+min_version=0.14
+
+[author]
+  name = "syui"
+  homepage = "https://syui.github.io"
+
+[original]
+  name = "hugo-theme-casper"
+  homepage = "http://vjeantet.fr/"
+  repo = "https://github.com/vjeantet/hugo-theme-casper"

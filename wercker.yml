@@ -1,0 +1,31 @@
+box: debian
+build:
+  steps:
+    - script:
+        name: install git
+        code: |
+          apt-get update
+          apt-get -y install git
+    - script:
+        name: download theme
+        code: |
+          git clone https://github.com/syui/hugo-theme-air themes/hugo-theme-air
+          rm -rf themes/hugo-theme-air/.git
+    - arjen/hugo-build:
+        version: "0.14"
+        theme: hugo-theme-air
+    - script:
+        name: create old RSS file
+        code: |
+          cp public/index.xml public/atom.xml
+deploy:
+  steps:
+    - script:
+        name: install git
+        code: |
+          apt-get update
+          apt-get -y install git
+    - lukevivier/gh-pages@0.2.1:
+        token: $GIT_TOKEN
+        domain: syui.github.io/hugo-theme-air
+        basedir: public
