@@ -1,0 +1,23 @@
+BaseUrl= "http://englianhu.github.io/"
+LanguageCode= "en-US"
+Title= "englianhu blog"
+paginate = 5
+DisqusShortname = ""
+Copyright = "All rights reserved - 2015"
+canonifyurls = true
+
+[params]
+  description = "this is my description"
+  cover = "images/cover.jpg"
+  author = "englianhu"
+  authorlocation = ""
+  authorwebsite = "http://englianhu.github.io/"
+  bio= "my bio"
+  logo = "images/user.png"
+  googleAnalyticsUserID = ""
+  # Optional RSS-Link, if not provided it defaults to the standard index.xml
+  RSSLink = ""
+  githubName = "englianhu"
+  twitterName = ""
+  # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+  hideHUGOSupport = false
