@@ -1,4 +1,4 @@
-BaseUrl= "http://syui.github.io/hugo-theme-air"
+BaseUrl= "http://syui.github.io/hugo-theme-air/"
 LanguageCode= "en-US"
 Title= "Hugo Theme Air"
 paginate = 5
