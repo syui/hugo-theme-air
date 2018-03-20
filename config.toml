@@ -6,6 +6,9 @@ DisqusShortname = ""
 Copyright = "All rights reserved - 2016"
 canonifyurls = true
 
+[author]
+  name = "syui"
+
 [params]
   description = "this is my description"
   cover = "images/user.jpg"
