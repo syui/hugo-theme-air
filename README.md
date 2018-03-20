@@ -14,9 +14,7 @@ $ git clone https://github.com/syui/hugo-theme-air
 
 $ cd hugo-theme-air
 
-$ cp config.toml.backup config.toml
-
-$ hugo new post/foo.md
+$ hugo
 
 $ hugo server
 ---------------------------------
