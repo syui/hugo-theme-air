@@ -1,11 +1,11 @@
 {{ partial "header.html" . }}
-{{ $baseurl := .Site.BaseURL }}
+{{ $baseurl := default "/" .Site.BaseURL }}
 
-<header class="main-header " style="background-image: url({{.Site.BaseURL}}{{.Site.Params.cover}})">
-    
+<header class="main-header " style="background-image: url({{$baseurl}}{{.Site.Params.cover}})">
+
     <nav class="main-nav overlay clearfix">
         {{ if .Site.Params.logo }}
-            <a class="blog-logo" href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}{{.Site.Params.logo}}" alt="Blog Logo" /></a>
+            <a class="blog-logo" href="{{ $baseurl }}"><img src="{{ $baseurl }}{{.Site.Params.logo}}" alt="Blog Logo" /></a>
         {{end}}
         <!--
         {{ if .Site.Menus.main }}
@@ -44,11 +44,11 @@
           </time>
         {{end}}
          {{ range .Params.tags }}
-          <span class="post-tag small"><a href="{{.Site.BaseURL}}tags/{{ . | urlize }}/">#{{ . }}</a></span>
+          <span class="post-tag small"><a href="{{$baseurl}}tags/{{ . | urlize }}/">#{{ . }}</a></span>
          {{ end }}
         </section>
     </header>
-  
+
     <section class="post-content">
       {{ .Content }}
     </section>
@@ -59,8 +59,8 @@
 
     {{if .Site.Params.logo}}
     <figure class="author-image">
-	    
-        <a class="img" href="{{.Site.BaseURL}}" style="background-image: url({{.Site.BaseURL}}{{.Site.Params.logo}})"><span class="hidden">{{ .Site.Params.author }}</span></a>
+
+        <a class="img" href="{{$baseurl}}" style="background-image: url({{$baseurl}}{{.Site.Params.logo}})"><span class="hidden">{{ .Site.Params.author }}</span></a>
     </figure>
     {{end}}
 
