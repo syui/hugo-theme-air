@@ -1,4 +1,6 @@
 <section class="author">
+{{ if isset .Site.Params "author" }}
   <p>{{ .Site.Params.author }}</p>
   <!--<p>Read <a href="{{ .Site.BaseURL }}">more posts</a> by this author.</p>-->
+{{ end }}
 </section>
