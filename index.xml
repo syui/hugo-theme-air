@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo Theme Air</title>
-    <link>http://syui.github.io/hugo-theme-air/</link>
+    <link>https://mbahack2.syui.cf/hugo-theme-air/</link>
     <description>Recent content on Hugo Theme Air</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://syui.github.io/hugo-theme-air/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://mbahack2.syui.cf/hugo-theme-air/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>test post</title>
-      <link>http://syui.github.io/hugo-theme-air/post/test/</link>
+      <link>https://mbahack2.syui.cf/hugo-theme-air/post/test/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://syui.github.io/hugo-theme-air/post/test/</guid>
-      <description>&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;echo &amp;quot;hello world !!&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <guid>https://mbahack2.syui.cf/hugo-theme-air/post/test/</guid>
+      <description>echo &amp;quot;hello world !!&amp;quot;  </description>
     </item>
     
   </channel>
