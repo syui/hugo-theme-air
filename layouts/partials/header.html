@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  	<meta property="og:title" content="{{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" />
+  	<meta property="og:title" content="{{ if ne .RelPermalink "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" />
   	<meta property="og:site_name" content="{{ .Site.Title }}" />
   	<meta property="og:url" content="{{ .Permalink }}" />
     
@@ -22,7 +22,7 @@
     {{ end }}
 
   <title>
-    {{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}
+    {{ if ne .RelPermalink "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}
   </title>
 
     <meta name="description" content="{{ .Site.Params.description }}" />
@@ -37,17 +37,17 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
 
 
-    {{ if .Site.Params.RSSLink}}
-        <link href="{{.Site.Params.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ if .Site.Params.RSSLink }}
+        <link href="{{ .Site.Params.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{else}}
-      {{ if ne .URL "/" }}
+      {{ if ne .RelPermalink "/" }}
           <link href="{{ .Site.BaseURL }}index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
       {{ end }}
       {{if .IsNode}}
-        <link href="{{.RSSLink}}" rel="alternate" type="application/rss+xml" title="{{ if ne .URL "/" }}{{ .Title }} &middot; {{ end }}{{ .Site.Title }}" />
+        <link href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" rel="alternate" type="application/rss+xml" title="{{ if ne .RelPermalink "/" }}{{ .Title }} &middot; {{ end }}{{ .Site.Title }}" />
       {{end}}
     {{end}}
-    {{.Hugo.Generator}}
+    {{hugo.Generator}}
 
     <link rel="canonical" href="{{ .Permalink }}" />
 
@@ -62,13 +62,10 @@
       ga('send', 'pageview');
 
     </script>
-    {{end}}
-<div id="particles-js"></div>
-<script src="{{ .Site.BaseURL }}js/particles.min.js"></script>
-<script src="{{ .Site.BaseURL }}js/particles.js"></script>   
+    {{end}} 
 </head>
 <body class="nav-closed">
-
+<div id="particles-js"></div>
   {{ partial "navigation.html" . }}
 
  <div class="site-wrapper">
