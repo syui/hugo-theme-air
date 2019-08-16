@@ -36,8 +36,12 @@
 </header>
 
 <main id="content" class="content" role="main">
-
-    {{ $paginator := .Paginate (where .Data.Pages "Section" "post") }}
+    {{ $pages := .Pages }}
+    {{ if .IsHome }}
+    {{ $pages = .Site.RegularPages }}
+    {{ end }}
+    {{ $paginator := .Paginate $pages }}
+    <!--{{ $paginator := .Paginate (where .Data.Pages "Section" "post") }}-->
 
     <div class="extra-pagination inner">
         {{ partial "pagination.html" $paginator }}

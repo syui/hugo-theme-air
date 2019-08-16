@@ -35,7 +35,14 @@
 </header>
 
 <main id="content" class="content" role="main">
+    {{ $pages := .Pages }}
+    {{ if .IsHome }}
+    {{ $pages = .Site.RegularPages }}
+    {{ end }}
+    {{ $paginator := .Paginate $pages }}
+    <!--
     {{ $paginator := .Paginator }}
+    -->
 
 	<div class="extra-pagination inner">
     {{ partial "pagination.html" $paginator }}
