@@ -9,6 +9,9 @@ canonifyurls = true
 [author]
   name = "syui"
 
+[permalinks]
+    post = "/post/:year/:month/:day/:slug"
+
 [params]
   description = "this is my description"
   cover = "images/user.jpg"
