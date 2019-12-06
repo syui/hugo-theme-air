@@ -1,4 +1,4 @@
-BaseUrl= "https://mbahack2.syui.cf/hugo-theme-air/"
+BaseUrl= "https://syui.cf/hugo-theme-air/"
 LanguageCode= "en-US"
 Title= "Hugo Theme Air"
 paginate = 5
@@ -14,7 +14,7 @@ canonifyurls = true
   cover = "images/user.jpg"
   author = "syui"
   authorlocation = ""
-  authorwebsite = "https://syui.github.io/hugo-theme-air"
+  authorwebsite = "https://syui.cf/hugo-theme-air"
   bio= "my bio"
   logo = "images/user.png"
   googleAnalyticsUserID = ""
