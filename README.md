@@ -3,6 +3,8 @@
 Air is a single-column theme for [Hugo](http://gohugo.io/).
 Ported from [Casper theme for Ghost ](https://github.com/TryGhost/Casper), [vjeantet/hugo-theme-casper](https://github.com/vjeantet/hugo-theme-casper)
 
+- github actions
+
 - blog demo : http://syui.github.io/hugo-theme-air
 
 - blog source : https://github.com/syui/hugo-theme-air
@@ -156,6 +158,7 @@ $ git push -u origin gh-pages
 # open
 $ curl user.github.io/repository
 ```
+
 
 # Contact me
 
