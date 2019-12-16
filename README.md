@@ -159,6 +159,21 @@ $ git push -u origin gh-pages
 $ curl user.github.io/repository
 ```
 
+## change logo
+
+Replace `static/images/user.png` with myfile.
+
+Please close the browser and rerun hugo server.
+
+point :`BaseUrl`, `authorwebsite` last slash `/`
+
+```toml
+BaseUrl= "https://localhost/"
+
+[params]
+  authorwebsite = "https://localhost"
+  logo = "images/user.png"
+```
 
 # Contact me
 
