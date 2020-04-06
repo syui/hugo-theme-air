@@ -28,3 +28,8 @@ canonifyurls = true
   # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
   hideHUGOSupport = false
   mainSections = ["post"]
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 2

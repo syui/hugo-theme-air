@@ -825,7 +825,6 @@ body.nav-opened .menu-button .word {
 
 /* Special styles when overlaid on an image*/
 .main-nav.overlay {
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
