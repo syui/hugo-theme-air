@@ -175,6 +175,22 @@ BaseUrl= "https://localhost/"
   logo = "images/user.png"
 ```
 
+## content title sort
+
+rewrite `layout/index.html`
+
+```html
+{{ range $index, $page := $paginator.Pages }}
+  {{ .Render "li" }}
+{{ end }}
+```
+
+```html
+{{ range .Site.RegularPages.ByTitle }}
+  {{ .Render "li"}}
+{{ end }}
+```
+
 # Contact me
 
 :beetle: open an issue in github
