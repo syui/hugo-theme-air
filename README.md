@@ -61,12 +61,10 @@ $ curl 127.0.0.1:1313/hugo-theme-air
 **config.toml**
 
 ``` bash
-$ cat config.toml.backup
-
-$ cp config.toml.backup config.toml
+$ cat config.toml
 ```
 
-Example : [config.toml](https://github.com/syui/hugo-theme-air/blob/master/config.toml.backup)
+Example : [config.toml](https://github.com/syui/hugo-theme-air/blob/master/config.toml)
 
 ## Multiple authors configuration
 
