@@ -8,6 +8,7 @@ menu = ""
 share = false
 slug = "test"
 title= "sample"
+tags = ["blog"]
 +++
 
 [Hugo](https://gohugo.io/documentation/) is the world's fastest static website engine. It's written in Go (aka Golang) and developed by bep, `spf13` and friends.
