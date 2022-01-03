@@ -10,19 +10,13 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@master
-    - uses: actions/setup-node@v1
-      with:
-        node-version: 12
-        ref: src
-        submodules: true
-    - run: yarn install
 
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2.2.2
+      uses: peaceiris/actions-hugo@v2
       with:
         hugo-version:
         # extended: true
-
+        
     - name: Build
       env: 
         TZ: "Asia/Tokyo"
@@ -31,8 +25,8 @@ jobs:
            touch ./public/.nojekyll
 
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v2.5.0
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./public
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+        publish_branch: gh-pages
