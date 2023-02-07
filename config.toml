@@ -16,15 +16,15 @@ canonifyurls = true
   description = "This is a Description"
   cover = "images/user.jpg"
   author = "tjax2017"
-  authorlocation = ""
-  authorwebsite = "https://syui.cf/hugo-theme-air"
-  bio= "my bio"
+  authorlocation = "New Zealand"
+  authorwebsite = "https://www.jaxnet.co.nzr"
+  bio= "About Me"
   logo = "images/user.png"
   googleAnalyticsUserID = ""
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   RSSLink = ""
   githubName = "tjax2017"
-  twitterName = ""
+  twitterName = "timbojax"
   # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
   hideHUGOSupport = false
   mainSections = ["post"]
