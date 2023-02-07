@@ -1,16 +1,16 @@
 +++
-author = "syui"
-tags = ["blog", "test"]
+author = "tjax2017"
+tags = ["About Us", "Blog"]
 comments = false
-date = "2016-01-01"
+date = "2022-02-08"
 draft = false
 image = ""
 menu = ""
 share = false
 slug = "test"
-title= "test post"
+title= "This is a new Site"
 +++
 
 ```bash
-echo "hello world !!"
+echo "Hi there world"
 ```
