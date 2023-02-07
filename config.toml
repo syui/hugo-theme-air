@@ -1,21 +1,21 @@
 BaseUrl= "https://syui.cf/hugo-theme-air/"
 LanguageCode= "en-US"
-Title= "Hugo Theme Air"
+Title= "Website 2022"
 paginate = 5
 DisqusShortname = ""
-Copyright = "All rights reserved - 2016"
+Copyright = "All rights reserved - 2022"
 canonifyurls = true
 
 [author]
-  name = "syui"
+  name = "tjax2017"
 
 [permalinks]
     post = "/post/:year/:month/:day/:slug"
 
 [params]
-  description = "this is my description"
+  description = "This is a Description"
   cover = "images/user.jpg"
-  author = "syui"
+  author = "tjax2017"
   authorlocation = ""
   authorwebsite = "https://syui.cf/hugo-theme-air"
   bio= "my bio"
@@ -23,7 +23,7 @@ canonifyurls = true
   googleAnalyticsUserID = ""
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   RSSLink = ""
-  githubName = "syui"
+  githubName = "tjax2017"
   twitterName = ""
   # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
   hideHUGOSupport = false
