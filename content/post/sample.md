@@ -1,13 +1,13 @@
 +++
-author = "syui"
+author = "tjax2017"
 comments = false
-date = "2017-01-01"
+date = "2022-02-08"
 draft = false
 image = ""
 menu = ""
 share = false
 slug = "test"
-title= "sample"
+title= "This is a Sample"
 tags = ["blog"]
 +++
 
