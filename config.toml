@@ -1,6 +1,6 @@
 BaseUrl= "https://syui.cf/hugo-theme-air/"
 LanguageCode= "en-US"
-Title= "Website 2022"
+Title= "Welcome to JAXNET"
 paginate = 5
 DisqusShortname = ""
 Copyright = "All rights reserved - 2022"
@@ -13,7 +13,7 @@ canonifyurls = true
     post = "/post/:year/:month/:day/:slug"
 
 [params]
-  description = "This is a Description"
+  description = "Enyoy looking around"
   cover = "images/user.jpg"
   author = "tjax2017"
   authorlocation = "New Zealand"
