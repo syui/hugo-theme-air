@@ -26,5 +26,5 @@ canonifyurls = true
   githubName = "tjax2017"
   twitterName = "timbojax"
   # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
-  hideHUGOSupport = false
+  hideHUGOSupport = true
   mainSections = ["post"]
